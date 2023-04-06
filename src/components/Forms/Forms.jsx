@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { addContact } from 'redux/operations';
-import { getContacts } from 'redux/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { getContacts } from 'redux/contacts/selectors';
 import PropTypes from 'prop-types';
 import {
   FormContainer,
@@ -58,6 +58,7 @@ export const Forms = () => {
             />
             <Error name="number" component="div" />
           </TitleInput>
+
           <Button type="submit">Add contact</Button>
         </Form>
       </Formik>

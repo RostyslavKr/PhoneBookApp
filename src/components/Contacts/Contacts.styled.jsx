@@ -11,7 +11,7 @@ export const ItemContact = styled.li`
   padding-bottom: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  &:nth-of-type(even) {
+  &:nth-of-type(odd) {
     background-color: #f6f8fa;
   }
 `;

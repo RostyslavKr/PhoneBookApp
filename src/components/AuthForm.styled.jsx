@@ -1,45 +1,24 @@
 import styled from '@emotion/styled';
-import { Field, ErrorMessage } from 'formik';
 
 export const FormContainer = styled.div`
   display: flex;
-  width: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
+
   justify-content: center;
 
-  padding: 45px;
-  background: rgb(213, 19, 104);
-  background: linear-gradient(
-    90deg,
-    rgba(213, 19, 104, 1) 0%,
-    rgba(158, 148, 233, 1) 100%
-  );
-  border: 2px solid #f09292;
+  padding: 15px;
 `;
-
 export const TitleInput = styled.label`
   display: block;
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  margin-bottom: 40px;
 `;
 
-export const Input = styled(Field)`
+export const Input = styled.input`
   display: block;
   width: 300px;
   height: 25px;
   background-color: transparent;
   border-radius: 15px;
   border: 2px solid #f09292;
-`;
-
-export const Error = styled(ErrorMessage)`
-  color: #bd0000;
-  font-weight: 700;
-  font-size: 18px;
 `;
 
 export const NameInput = styled.span`
@@ -54,7 +33,6 @@ export const Button = styled.button`
   padding: 10px 20px;
   margin-left: auto;
   margin-right: auto;
-
   border-radius: 10px;
   border: none;
   text-transform: uppercase;

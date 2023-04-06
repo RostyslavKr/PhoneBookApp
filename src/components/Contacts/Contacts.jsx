@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/operations';
-import { getContacts, getFilterValue } from 'redux/selectors';
+import { deleteContact } from 'redux/contacts/operations';
+import { getContacts, getFilterValue } from 'redux/contacts/selectors';
 import { WrapperContacts, ItemContact, DeleteButton } from './Contacts.styled';
 
 const getVisibleContacts = (contacts, value) => {

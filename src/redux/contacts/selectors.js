@@ -5,3 +5,5 @@ export const getIsLoading = state => state.contacts.isLoading;
 export const getError = state => state.contacts.error;
 
 export const getFilterValue = state => state.filter.nameUser;
+
+export const getShowModal = state => state.showModal.showModal;
