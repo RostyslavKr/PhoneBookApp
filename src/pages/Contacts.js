@@ -12,7 +12,6 @@ import { ShowModalButton } from 'components/ShowModalButton/ShowModalButton';
 export default function Contact() {
   const dispatch = useDispatch();
   const showModalStatus = useSelector(getShowModal);
-  console.log(showModalStatus);
 
   useEffect(() => {
     dispatch(fetchContacts());
